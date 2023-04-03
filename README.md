@@ -69,3 +69,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+"EARTH" (https://skfb.ly/6DxnV) by Stéphane Agullo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

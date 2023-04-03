@@ -16,7 +16,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center pr-4 pl-1 pt-10 bg-[#222] opacity-95 text-[#39ff14]">
+        <div className="fixed w-full h-[80px] flex justify-between items-center pr-4 pl-1 pt-10 bg-[#222] opacity-95 text-[#39ff14] box-border">
             <div>
                 <Link
                     to="home"
@@ -32,7 +32,7 @@ const Navbar = () => {
             <ul className="hidden md:flex">
                 <li>
                     <Link
-                        className="hover:text-[#39ff14]  duration-500"
+                        className="text-[#FFDEAD] text-[#FFDEAD] hover:text-[#39ff14]  duration-500"
                         to="home"
                         smooth={true}
                         duration={500}
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="hover:text-[#39ff14] duration-500"
+                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
                         to="about"
                         smooth={true}
                         duration={500}
@@ -52,7 +52,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="hover:text-[#39ff14] duration-500"
+                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
                         to="skills"
                         smooth={true}
                         duration={500}
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="hover:text-[#39ff14] duration-500"
+                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
                         to="work"
                         smooth={true}
                         duration={500}
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="hover:text-[#39ff14] duration-500"
+                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
                         to="contact"
                         smooth={true}
                         duration={500}
@@ -162,36 +162,36 @@ const Navbar = () => {
             {/* Social icons */}
             <div className="hidden lg:flex fixed flex-col top-[45%] left-0">
                 <ul>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0A66C2] rounded-tr-3xl">
-                        <a
-                            className="flex justify-between items-center w-full text-white pl-4 font-extrabold"
-                            href="/"
-                        >
-                            Linkedin <FaLinkedin size={30} color={"white"} />
-                        </a>
-                    </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-tr-3xl border-r-2 border-t-2 border-[#39ff14]">
                         <a
                             className="flex justify-between items-center w-full text-[#39ff14] pl-4 font-extrabold"
                             href="/"
                         >
-                            Github <FaGithub size={30} color={"white"} />
+                            Linkedin <FaLinkedin size={30} color={"#FFDEAD"} />
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1DA1F2]">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-[#39ff14] ">
                         <a
-                            className="flex justify-between items-center w-full text-black pl-4 font-extrabold"
+                            className="flex justify-between items-center w-full text-[#39ff14] pl-4 font-extrabold"
                             href="/"
                         >
-                            Twitter <FaTwitter size={30} color={"white"} />
+                            Github <FaGithub size={30} color={"#FFDEAD"} />
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#FFDEAD] rounded-br-3xl">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-[#39ff14]">
                         <a
-                            className="flex justify-between items-center w-full text-red-600 pl-4  font-extrabold"
+                            className="flex justify-between items-center w-full text-[#39ff14] pl-4 font-extrabold"
                             href="/"
                         >
-                            Email <HiOutlineMail size={30} color={"red"} />
+                            Twitter <FaTwitter size={30} color={"#FFDEAD"} />
+                        </a>
+                    </li>
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-br-3xl border-r-2 border-b-2 border-[#39ff14]">
+                        <a
+                            className=" flex justify-between items-center w-full text-[#39ff14]#FFDEAD  font-extrabold"
+                            href="/"
+                        >
+                            Email <HiOutlineMail size={30} color={"#FFDEAD"} />
                         </a>
                     </li>
                 </ul>

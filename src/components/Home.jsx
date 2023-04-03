@@ -6,13 +6,13 @@ const Home = () => {
         <div name="home" className="w-full h-screen pt-36 bg-[#222]">
             {/* Container */}
             <div className="max-w-[1000px]  mx-auto  px-32 flex flex-col justify-center h-full">
-                <p className="text-xl text-[#99de8d] hover:text-[#39ff14] duration-1000 py-4">
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#99de8d] hover:text-[#39ff14] duration-1000 py-4 cursor-pointer">
                     Hello, my name is...
                 </p>
-                <h1 className="pb-4 text-4xl sm:text-7xl font-bold text-[#FFDEAD] hover:text-[#39ff14] hover:animate-pulse duration-1000 cursor-pointer">
+                <h1 className="h-20 pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#FFDEAD] cursor-pointer hover:text-[#39ff14] duration-1000">
                     Mario Polchert
                 </h1>
-                <h2 className="text-4xl sm:text-7xl font-bold text-[#99de8d] hover:text-[#39ff14] duration-1000 cursor-pointer">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#99de8d] hover:text-[#39ff14] duration-1000 cursor-pointer">
                     I'm a Web Developer
                 </h2>
                 <p className="text-[#8892b0] py-4 max-w-[700px]">
