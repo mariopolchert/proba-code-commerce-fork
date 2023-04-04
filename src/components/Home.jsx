@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div name="home" className="w-full h-screen pt-36 bg-[#222]">
             {/* Container */}
-            <div className="max-w-[1000px]  mx-auto  px-32 flex flex-col justify-center h-full">
+            <div className="max-w-[1000px]  mx-auto  px-22 flex flex-col justify-center h-full">
                 <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#99de8d] hover:text-[#39ff14] duration-1000 py-4 cursor-pointer">
                     Hello, my name is...
                 </p>

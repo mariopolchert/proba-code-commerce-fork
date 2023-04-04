@@ -7,7 +7,6 @@ import {
     FaTwitter,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo_green.svg";
 import { Link } from "react-scroll";
 
@@ -29,10 +28,10 @@ const Navbar = () => {
             </div>
 
             {/* menu */}
-            <ul className="hidden md:flex">
+            <ul className="hidden text-xl md:flex">
                 <li>
                     <Link
-                        className="text-[#FFDEAD] text-[#FFDEAD] hover:text-[#39ff14]  duration-500"
+                        className="text-[#FFDEAD] hover:text-[#39ff14]  duration-500"
                         to="home"
                         smooth={true}
                         duration={500}
@@ -158,7 +157,7 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
-            {/* top-[45%] */}
+
             {/* Social icons */}
             <div className="hidden lg:flex fixed flex-col top-[45%] left-0">
                 <ul>

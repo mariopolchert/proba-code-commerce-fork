@@ -14,10 +14,10 @@ const About = () => {
                     <div className="sm:text-right text-4xl font-bold">
                         <p>
                             Hi. I'm{" "}
-                            <span className="hover:text-[#39ff14] hover:animate-pulse cursor-pointer">
+                            <span className=" animate-pulse hover:text-[#39ff14] hover:animate-none cursor-pointer">
                                 Mario
                             </span>
-                            , good to have you here. Please, have a look around.
+                            , it's good to have you here. Please, have a look around.
                         </p>
                     </div>
                     <div>
