@@ -3,17 +3,19 @@ import realEstate from "../assets/realestate.jpg";
 
 const Work = () => {
     return (
-        <div name="work" className="w-full md:h-screen text-gray-300 bg-[#222]">
+        <div
+            name="work"
+            className="w-full md:h-screen text-gray-300 bg-darkText"
+        >
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
-                    <p className="text-4xl font-bold inline border-b-4 text-[#FFDEAD] border-[#39ff14] hover:text-[#39ff14] cursor-pointer">
+                    <p className="text-4xl font-bold inline border-b-4 text-lightText border-accent hover:text-accent cursor-pointer duration-1000">
                         Work
                     </p>
                 </div>
 
                 {/* Container */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-
                     {/* Grid Item */}
                     {/* images: 1013 x 792 */}
                     <div
@@ -46,7 +48,7 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* Grid Item */}
                     <div
                         style={{ backgroundImage: `url(${WorkImg})` }}

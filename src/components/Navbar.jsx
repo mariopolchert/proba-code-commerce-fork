@@ -15,7 +15,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center pr-4 pl-1 pt-10 bg-[#222] opacity-95 text-[#39ff14] box-border">
+        <div className="fixed w-full h-[80px] flex justify-between items-center pr-4 pl-1 pt-10 bg-darkText opacity-95 text-accent box-border">
             <div>
                 <Link
                     to="home"
@@ -23,7 +23,11 @@ const Navbar = () => {
                     duration={500}
                     className="cursor-pointer "
                 >
-                    <img src={Logo} alt="Logo" className="w-[4vw] " />
+                    <img
+                        src={Logo}
+                        alt="Logo"
+                        className="w-[4vw] hover:scale-105 duration-500"
+                    />
                 </Link>
             </div>
 
@@ -31,7 +35,7 @@ const Navbar = () => {
             <ul className="hidden text-xl md:flex">
                 <li>
                     <Link
-                        className="text-[#FFDEAD] hover:text-[#39ff14]  duration-500"
+                        className="text-lightText hover:text-accent  duration-500"
                         to="home"
                         smooth={true}
                         duration={500}
@@ -41,7 +45,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
+                        className="text-lightText hover:text-accent duration-500"
                         to="about"
                         smooth={true}
                         duration={500}
@@ -51,7 +55,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
+                        className="text-lightText hover:text-accent duration-500"
                         to="skills"
                         smooth={true}
                         duration={500}
@@ -61,7 +65,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
+                        className="text-lightText hover:text-accent duration-500"
                         to="work"
                         smooth={true}
                         duration={500}
@@ -71,7 +75,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="text-[#FFDEAD] hover:text-[#39ff14] duration-500"
+                        className="text-lightText hover:text-accent duration-500"
                         to="contact"
                         smooth={true}
                         duration={500}
@@ -82,10 +86,7 @@ const Navbar = () => {
             </ul>
 
             {/* Hamburger */}
-            <div
-                onClick={handleClick}
-                className="md:hidden z-10 text-[#39ff14]"
-            >
+            <div onClick={handleClick} className="md:hidden z-10 text-accent">
                 {!nav ? <FaBars /> : <FaTimes />}
             </div>
 
@@ -99,7 +100,7 @@ const Navbar = () => {
             >
                 <li className="py-6 text-4xl">
                     <Link
-                        className="hover:text-[#39ff14]"
+                        className="hover:text-accent"
                         onClick={handleClick}
                         to="home"
                         smooth={true}
@@ -111,7 +112,7 @@ const Navbar = () => {
                 <li className="py-6 text-4xl">
                     {" "}
                     <Link
-                        className="hover:text-[#39ff14]"
+                        className="hover:text-accent"
                         onClick={handleClick}
                         to="about"
                         smooth={true}
@@ -123,7 +124,7 @@ const Navbar = () => {
                 <li className="py-6 text-4xl">
                     {" "}
                     <Link
-                        className="hover:text-[#39ff14]"
+                        className="hover:text-accent"
                         onClick={handleClick}
                         to="skills"
                         smooth={true}
@@ -135,7 +136,7 @@ const Navbar = () => {
                 <li className="py-6 text-4xl">
                     {" "}
                     <Link
-                        className="hover:text-[#39ff14]"
+                        className="hover:text-accent"
                         onClick={handleClick}
                         to="work"
                         smooth={true}
@@ -147,7 +148,7 @@ const Navbar = () => {
                 <li className="py-6 text-4xl">
                     {" "}
                     <Link
-                        className="hover:text-[#39ff14]"
+                        className="hover:text-accent"
                         onClick={handleClick}
                         to="contact"
                         smooth={true}
@@ -161,33 +162,33 @@ const Navbar = () => {
             {/* Social icons */}
             <div className="hidden lg:flex fixed flex-col top-[45%] left-0">
                 <ul>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-tr-3xl border-r-2 border-t-2 border-[#39ff14]">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-tr-3xl border-r-2 border-t-2 border-accent">
                         <a
-                            className="flex justify-between items-center w-full text-[#39ff14] pl-4 font-extrabold"
+                            className="flex justify-between items-center w-full text-accent pl-4 font-extrabold"
                             href="/"
                         >
                             Linkedin <FaLinkedin size={30} color={"#FFDEAD"} />
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-[#39ff14] ">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-accent ">
                         <a
-                            className="flex justify-between items-center w-full text-[#39ff14] pl-4 font-extrabold"
+                            className="flex justify-between items-center w-full text-accent pl-4 font-extrabold"
                             href="/"
                         >
                             Github <FaGithub size={30} color={"#FFDEAD"} />
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-[#39ff14]">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-accent">
                         <a
-                            className="flex justify-between items-center w-full text-[#39ff14] pl-4 font-extrabold"
+                            className="flex justify-between items-center w-full text-accent pl-4 font-extrabold"
                             href="/"
                         >
                             Twitter <FaTwitter size={30} color={"#FFDEAD"} />
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-br-3xl border-r-2 border-b-2 border-[#39ff14]">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-br-3xl border-r-2 border-b-2 border-accent">
                         <a
-                            className=" flex justify-between items-center w-full text-[#39ff14]#FFDEAD  font-extrabold"
+                            className=" flex justify-between items-center w-full text-accent#FFDEAD  font-extrabold"
                             href="/"
                         >
                             Email <HiOutlineMail size={30} color={"#FFDEAD"} />
