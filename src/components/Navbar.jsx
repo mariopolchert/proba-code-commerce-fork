@@ -26,7 +26,7 @@ const Navbar = () => {
                     <img
                         src={Logo}
                         alt="Logo"
-                        className="w-[4vw] hover:scale-105 duration-500"
+                        className="w-16 md:w-20 lg:w-28 hover:scale-105 duration-500"
                     />
                 </Link>
             </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <ul className="hidden text-xl md:flex">
                 <li>
                     <Link
-                        className="text-lightText hover:text-accent  duration-500"
+                        className="text-lightText hover:text-accent duration-500"
                         to="home"
                         smooth={true}
                         duration={500}
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="text-lightText hover:text-accent duration-500"
+                        className="text-lightText hover:text-accent  duration-500"
                         to="about"
                         smooth={true}
                         duration={500}
@@ -55,17 +55,17 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="text-lightText hover:text-accent duration-500"
-                        to="skills"
+                        className="text-lightText hover:text-accent  duration-500"
+                        to="tools"
                         smooth={true}
                         duration={500}
                     >
-                        Skills
+                        Tools
                     </Link>
                 </li>
                 <li>
                     <Link
-                        className="text-lightText hover:text-accent duration-500"
+                        className="text-lightText hover:text-accent  duration-500"
                         to="work"
                         smooth={true}
                         duration={500}
@@ -75,7 +75,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className="text-lightText hover:text-accent duration-500"
+                        className="text-lightText hover:text-accent  duration-500"
                         to="contact"
                         smooth={true}
                         duration={500}
@@ -95,7 +95,7 @@ const Navbar = () => {
                 className={
                     !nav
                         ? "hidden"
-                        : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+                        : "absolute top-0 left-0 w-full h-screen z-200 bg-[#0a192f] flex flex-col justify-center items-center"
                 }
             >
                 <li className="py-6 text-4xl">
@@ -126,11 +126,11 @@ const Navbar = () => {
                     <Link
                         className="hover:text-accent"
                         onClick={handleClick}
-                        to="skills"
+                        to="tools"
                         smooth={true}
                         duration={500}
                     >
-                        Skills
+                        Tools
                     </Link>
                 </li>
                 <li className="py-6 text-4xl">
@@ -173,7 +173,7 @@ const Navbar = () => {
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-accent ">
                         <a
                             className="flex justify-between items-center w-full text-accent pl-4 font-extrabold"
-                            href="/"
+                            href="https://github.com/mariopolchert"
                         >
                             Github <FaGithub size={30} color={"#FFDEAD"} />
                         </a>
@@ -181,7 +181,7 @@ const Navbar = () => {
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] border-r-2 border-accent">
                         <a
                             className="flex justify-between items-center w-full text-accent pl-4 font-extrabold"
-                            href="/"
+                            href="https://twitter.com/mariopolchert"
                         >
                             Twitter <FaTwitter size={30} color={"#FFDEAD"} />
                         </a>
@@ -189,7 +189,7 @@ const Navbar = () => {
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-br-3xl border-r-2 border-b-2 border-accent">
                         <a
                             className=" flex justify-between items-center w-full text-accent#FFDEAD  font-extrabold"
-                            href="/"
+                            href="mailto:mario@mariopolchert.com"
                         >
                             Email <HiOutlineMail size={30} color={"#FFDEAD"} />
                         </a>
